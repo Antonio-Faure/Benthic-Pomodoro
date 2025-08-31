@@ -5,8 +5,8 @@ from datetime import datetime, timedelta
 
 # Configuration de la page
 st.set_page_config(
-    page_title="Pomodoro Timer",
-    page_icon="🍅",
+    page_title="Benthic Pomodoro",
+    page_icon="🌊",
     layout="centered"
 )
 
@@ -160,7 +160,7 @@ def get_progress_percentage():
     return min((elapsed / total_time) * 100, 100)
 
 # Interface principale
-st.markdown('<div class="phase-indicator"> 🌊 Benthic-Pomodoro</div>', unsafe_allow_html=True)
+st.markdown('<div class="phase-indicator"> 🌊 Benthic Pomodoro</div>', unsafe_allow_html=True)
 
 # Calcul du temps restant si le timer est en marche
 if st.session_state.timer_state == 'running' and st.session_state.start_time:
