@@ -160,7 +160,7 @@ def get_progress_percentage():
     return min((elapsed / total_time) * 100, 100)
 
 # Interface principale
-st.title('<div class="phase-indicator">"🌊 Pomodoro Timer"</div>', unsafe_allow_html=True)
+st.markdown('<div class="phase-indicator"> 🌊 Benthic-Pomodoro</div>', unsafe_allow_html=True)
 
 # Calcul du temps restant si le timer est en marche
 if st.session_state.timer_state == 'running' and st.session_state.start_time:
